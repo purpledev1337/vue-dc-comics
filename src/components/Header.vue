@@ -1,6 +1,6 @@
 <template>
-  <header>
-    <img src='..\assets\dc-logo.png' alt="">
+  <header class="container">
+    <img src="..\assets\dc-logo.png" alt="">
     <ul>
       <li>
         <a href="">
@@ -80,6 +80,7 @@ li {
   line-height: 150px;
     a {
       text-decoration: none;
+      text-transform: uppercase;
     }
   &.active {
       border-bottom: 5px solid rgb(2,130,249);
