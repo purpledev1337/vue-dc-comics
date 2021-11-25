@@ -1,23 +1,23 @@
 <template>
   <section>
     <div class="container">
-      <div>
+      <div class="card">
         <img src="..\assets\buy-comics-digital-comics.png" alt="Digital Comis">
         <span>Digital Comis</span>
       </div>
-      <div>
+      <div class="card">
         <img src="..\assets\buy-comics-merchandise.png" alt="DC Merchandise">
         <span>DC Merchandise</span>
       </div>
-      <div>
+      <div class="card">
         <img src="..\assets\buy-comics-shop-locator.png" alt="Subscription">
         <span>Subscription</span>
       </div>
-      <div>
+      <div class="card">
         <img src="..\assets\buy-comics-subscriptions.png" alt="Comic Shop Locator">
         <span>Comic Shop Locator</span>
       </div>
-      <div>
+      <div class="card">
         <img src="..\assets\buy-dc-power-visa.svg" alt="DC Power Visa">
         <span>DC Power Visa</span>
       </div>
@@ -27,10 +27,7 @@
 
 <script>
 export default {
-  name: 'InfoBanner',
-  props: {
-    msg: String
-  }
+  name: 'InfoBanner'
 }
 </script>
 
@@ -45,12 +42,15 @@ section {
       display: flex;
       justify-content: space-around;
       align-items: center;
+        .card {
+          display: flex;
+          align-items: center;
+        }
         img {
           height: 50px;
           margin: 0 10px;
         }
         span {
-          vertical-align: middle;
           text-transform: uppercase;
         }
     }

@@ -8,10 +8,7 @@
 
 <script>
 export default {
-  name: 'Main',
-  props: {
-    msg: String
-  }
+  name: 'Main'
 }
 </script>
 
@@ -21,8 +18,6 @@ main {
   padding: 70px 0;
   color: white;
   background-color: black;
-  // temporary fix to the active border in header
-  margin-top: 3px;
 }
 
 </style>

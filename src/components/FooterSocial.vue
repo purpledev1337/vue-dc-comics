@@ -18,10 +18,7 @@
 
 <script>
 export default {
-  name: 'FooterSocial',
-  props: {
-    msg: String
-  }
+  name: 'FooterSocial'
 }
 </script>
 

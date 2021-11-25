@@ -1,10 +1,18 @@
 <template>
   <div id="app">
+
     <Header/>
+
     <Main/>
-    <InfoBanner/>
-    <FooterNav/>
-    <FooterSocial/>
+
+    <footer>
+      <InfoBanner/>
+
+      <FooterNav/>
+      
+      <FooterSocial/>
+    </footer>
+
   </div>
 </template>
 

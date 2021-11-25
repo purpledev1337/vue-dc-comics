@@ -149,10 +149,7 @@
 
 <script>
 export default {
-  name: 'FooterNav',
-  props: {
-    msg: String
-  }
+  name: 'FooterNav'
 }
 </script>
 
@@ -169,7 +166,6 @@ nav {
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
-      align-content: center;
 }
 }
 
@@ -187,6 +183,11 @@ li {
       text-decoration: none;
       display: inline-block;
     }
+}
+
+img {
+    position: relative;
+    bottom: 120px
 }
 
 </style>

@@ -2,54 +2,9 @@
   <header class="container">
     <img src="..\assets\dc-logo.png" alt="">
     <ul>
-      <li>
-        <a href="">
-          Characters
-        </a>
-      </li>
-      <li class="active">
-        <a href="">
-          Comics
-        </a>
-      </li>
-      <li>
-        <a href="">
-          Movies
-        </a>
-      </li>
-      <li>
-        <a href="">
-          TV
-        </a>
-      </li>
-      <li>
-        <a href="">
-          Games
-          </a>
-      </li>
-      <li>
-        <a href="">
-          Collectibles
-        </a>
-      </li>
-      <li>
-        <a href="">
-          Videos
-        </a>
-      </li>
-      <li>
-        <a href="">
-          Fans
-        </a>
-      </li>
-      <li>
-        <a href="">
-          News
-        </a>
-      </li>
-      <li>
-        <a href="">
-          Shop
+      <li :class="link.here ? 'active' : ''" v-for="link, i in links" :key="i" @click="navClick(i)" >
+        <a href="link.url">
+          {{link.text}}
         </a>
       </li>
     </ul>
@@ -59,8 +14,69 @@
 <script>
 export default {
   name: 'Header',
-  props: {
-    msg: String
+  data() {
+    return {
+      links: [
+        {
+          text: "Characters",
+          url: "#",
+          here: false
+        },
+        {
+          text: "Comics",
+          url: "#",
+          here: true
+        },
+        {
+          text: "Movies",
+          url: "#",
+          here: false
+        },
+        {
+          text: "TV",
+          url: "#",
+          here: false
+        },
+        {
+          text: "Games",
+          url: "#",
+          here: false
+        },
+        {
+          text: "Collectibles",
+          url: "#",
+          here: false
+        },
+        {
+          text: "Videos",
+          url: "#",
+          here: false
+        },
+        {
+          text: "Fans",
+          url: "#",
+          here: false
+        },
+        {
+          text: "News",
+          url: "#",
+          here: false
+        },
+        {
+          text: "Shop",
+          url: "#",
+          here: false
+        }
+      ]
+    }
+  },
+  methods: {
+    navClick: function(index) {
+      for (let i = 0; i < this.links.length; i++) {
+        this.links[i].here = false;
+      }
+      this.links[index].here = true;
+    }
   }
 }
 </script>
@@ -75,10 +91,12 @@ header {
 }
 
 li {
+  height: 150px;
   display: inline-block;
   margin: 0 15px;
-  line-height: 150px;
     a {
+      display: inline-block;
+      line-height: 150px;
       text-decoration: none;
       text-transform: uppercase;
     }
