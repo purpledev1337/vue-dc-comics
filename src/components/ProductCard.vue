@@ -1,8 +1,16 @@
 <template>
     <div class="product_card">
-      <img :src="img" />
+      <img :src="img"/>
       <div class="product_name">
           {{ seriesName }}
+      </div>
+      <div class="product_details">
+        <div>
+            {{ type }}
+        </div>
+        <div>
+            {{ price }}
+        </div>
       </div>
     </div>
 </template>
@@ -13,7 +21,8 @@ export default {
   props: {
       img: String,
       seriesName: String,
-      price: String
+      price: String,
+      type: String
   }
 }
 </script>
@@ -24,6 +33,18 @@ export default {
     width: calc((100% / 6) - 20px);
     margin: 0 10px;
     margin-bottom: 40px;
+    position: relative;
+    overflow: hidden;
+
+    .product_details {
+        width: 100%;
+        height: 200px;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: black;
+        position: absolute;
+        top: 0;
+        display: none;
+    }
 }
 
 img {
