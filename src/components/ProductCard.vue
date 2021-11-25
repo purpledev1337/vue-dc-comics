@@ -36,26 +36,26 @@ export default {
     position: relative;
     overflow: hidden;
 
-    .product_details {
+        img {
         width: 100%;
         height: 200px;
-        background-color: rgba(0, 0, 0, 0.5);
-        color: black;
-        position: absolute;
-        top: 0;
-        display: none;
-    }
-}
+        object-fit: cover;
+        object-position: top;
+        }
 
-img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    object-position: top;
-}
+        .product_name {
+            text-transform: uppercase;
+            margin-top: 15px;
+        }
 
-.product_name {
-    text-transform: uppercase;
-    margin-top: 15px;
+        .product_details {
+            width: 100%;
+            height: 200px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: black;
+            position: absolute;
+            top: 0;
+            display: none;
+        }
 }
 </style>

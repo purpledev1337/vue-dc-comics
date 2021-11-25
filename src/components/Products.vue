@@ -115,38 +115,42 @@ main {
   color: white;
   background-color: rgb(28,28,28);
   text-transform: uppercase;
+
+    .container {
+      text-align: center;
+
+      section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        text-align: left;
+        font-size: 0.9em;
+        position: relative;
+      }
+    }
 }
 
-section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  text-align: left;
-  font-size: 0.9em;
-  position: relative;
-}
-
-.container {
-  text-align: center;
-}
-
-#products_load_more, #current_series_btn {
+#products_load_more {
   display: inline-block;
   width: 200px;
   background-color: rgb(2,130,249);
   padding: 10px;
   font-size: 0.8em;
   text-align: center;
+  font-weight: 700;
 }
 
 #current_series_btn {
+  display: inline-block;
   width: 250px;
+  background-color: rgb(2,130,249);
+  padding: 15px;
+  font-size: 1.5em;
+  text-align: center;
+  font-weight: 700;
   position: absolute;
   top: -100px;
   left: 0;
-  padding: 15px;
-  font-size: 1.5em;
-  font-weight: 700;
 }
 
 </style>

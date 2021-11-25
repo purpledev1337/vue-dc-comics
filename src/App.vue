@@ -26,7 +26,6 @@ import InfoBanner from './components/InfoBanner.vue'
 import FooterNav from './components/FooterNav.vue'
 import FooterSocial from './components/FooterSocial.vue'
 
-
 export default {
   name: 'App',
   components: {
@@ -54,7 +53,8 @@ export default {
 // }
 
 .container {
-    width: 70%;
-    margin: 0 auto;
+  width: 70%;
+  margin: 0 auto;
 }
+
 </style>

@@ -161,30 +161,35 @@ nav {
   background-image: url('../assets/footer-bg.jpg');
   padding: 25px 0;
   overflow: hidden;
+
     .container {
       height: 100%;
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
-      img {
-        position: relative;
-        bottom: 120px
-      }
+
+        ul {
+          margin: 15px 0;
+          margin-right: 50px;
+          display: inline-block;
+          list-style: none;
+
+          li {
+            margin: 5px 0;
+
+            a {
+              color: grey;
+              text-decoration: none;
+              display: inline-block;
+            }
+          }
+        }
+        
+        img {
+          position: relative;
+          bottom: 120px
+        }
     }
 }
 
-ul  {
-  margin: 15px 0;
-  margin-right: 50px;
-  display: inline-block;
-  list-style: none;
-  li {
-    margin: 5px 0;
-      a {
-        color: grey;
-        text-decoration: none;
-        display: inline-block;
-      }
-  }
-}
 </style>

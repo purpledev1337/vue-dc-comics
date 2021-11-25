@@ -96,13 +96,15 @@ li {
   margin: 0 15px;
   font-size: 0.8em;
   font-weight: 900;
+
     a {
       display: inline-block;
       line-height: 150px;
       text-decoration: none;
       text-transform: uppercase;
     }
-  &.active {
+
+    &.active {
       border-bottom: 5px solid rgb(2,130,249);
     }
 }

@@ -37,19 +37,23 @@ section {
   height: 180px;
   background-color: rgb(2,130,249);
   color: white;
+
     .container {
       height: 100%;
       display: flex;
       justify-content: space-around;
       align-items: center;
+
         .card {
           display: flex;
           align-items: center;
         }
+
         img {
           height: 50px;
           margin: 0 10px;
         }
+        
         span {
           text-transform: uppercase;
         }
