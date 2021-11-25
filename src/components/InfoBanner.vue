@@ -10,11 +10,11 @@
         <span>DC Merchandise</span>
       </div>
       <div class="card">
-        <img src="..\assets\buy-comics-shop-locator.png" alt="Subscription">
+        <img src="..\assets\buy-comics-subscriptions.png" alt="Subscription">
         <span>Subscription</span>
       </div>
       <div class="card">
-        <img src="..\assets\buy-comics-subscriptions.png" alt="Comic Shop Locator">
+        <img src="..\assets\buy-comics-shop-locator.png" alt="Comic Shop Locator">
         <span>Comic Shop Locator</span>
       </div>
       <div class="card">

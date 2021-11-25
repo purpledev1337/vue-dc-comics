@@ -35,6 +35,13 @@ section {
     }
 }
 
+.btn {
+  display: inline-block;
+  color: white;
+  padding: 15px;
+  border: 1px solid rgb(2,130,249);
+}
+
 span {
   color: rgb(2,130,249);
   font-size: 2em;
@@ -42,12 +49,5 @@ span {
 
 img {
   margin: 0 15px;
-}
-
-.btn {
-  display: inline-block;
-  color: white;
-  padding: 15px;
-  border: 1px solid rgb(2,130,249);
 }
 </style>

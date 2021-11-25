@@ -94,6 +94,8 @@ li {
   height: 150px;
   display: inline-block;
   margin: 0 15px;
+  font-size: 0.8em;
+  font-weight: 900;
     a {
       display: inline-block;
       line-height: 150px;

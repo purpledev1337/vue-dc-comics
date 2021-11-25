@@ -166,7 +166,11 @@ nav {
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
-}
+      img {
+        position: relative;
+        bottom: 120px
+      }
+    }
 }
 
 ul  {
@@ -174,20 +178,13 @@ ul  {
   margin-right: 50px;
   display: inline-block;
   list-style: none;
+  li {
+    margin: 5px 0;
+      a {
+        color: grey;
+        text-decoration: none;
+        display: inline-block;
+      }
+  }
 }
-
-li {
-  margin: 5px 0;
-    a {
-      color: grey;
-      text-decoration: none;
-      display: inline-block;
-    }
-}
-
-img {
-    position: relative;
-    bottom: 120px
-}
-
 </style>

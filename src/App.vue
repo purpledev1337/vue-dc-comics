@@ -3,7 +3,9 @@
 
     <Header/>
 
-    <Main/>
+    <Jumbotron/>
+
+    <Products/>
 
     <footer>
       <InfoBanner/>
@@ -18,16 +20,19 @@
 
 <script>
 import Header from './components/Header.vue'
-import Main from './components/Main.vue'
+import Jumbotron from './components/Jumbotron.vue'
+import Products from './components/Products.vue'
 import InfoBanner from './components/InfoBanner.vue'
 import FooterNav from './components/FooterNav.vue'
 import FooterSocial from './components/FooterSocial.vue'
+
 
 export default {
   name: 'App',
   components: {
     Header,
-    Main,
+    Jumbotron,
+    Products,
     InfoBanner,
     FooterNav,
     FooterSocial
@@ -49,7 +54,7 @@ export default {
 // }
 
 .container {
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
 }
 </style>
